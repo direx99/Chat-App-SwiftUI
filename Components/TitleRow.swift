@@ -29,12 +29,12 @@ struct TitleRow: View {
                     .font(.title).bold()
                 Text("Online")
                     .font(.caption)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.green)
                 
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             Image(systemName: "phone.fill")
-                .foregroundColor(.gray)
+                .foregroundColor(Color("AppBlue"))
                 .padding(10)
                 .background(.white)
                 .cornerRadius(50)
@@ -47,6 +47,6 @@ struct TitleRow: View {
 struct TitleRow_Previews: PreviewProvider {
     static var previews: some View {
         TitleRow()
-            .background(Color("Peach"))
+            .background(.white)
     }
 }
